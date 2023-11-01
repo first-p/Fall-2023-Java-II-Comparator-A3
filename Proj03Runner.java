@@ -27,7 +27,7 @@ public class Proj03Runner implements Comparator<String>{
     public String getName(){
         return name;
     }//end getter method
-
+//
     //Override the equals method to provide consistent behavior when
     //there are duplicate strings
     public boolean equals(String obj){
@@ -45,7 +45,10 @@ public class Proj03Runner implements Comparator<String>{
     //the equals method to ensure that duplicate elements have identical
     //hashcode which is important when using hash-based collections like
     //hashSet
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }//end method
 
     //Override the toString method in order to display a meaningful string representation
 
