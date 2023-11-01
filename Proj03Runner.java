@@ -30,7 +30,16 @@ public class Proj03Runner implements Comparator<String>{
 
     //Override the equals method to provide consistent behavior when
     //there are duplicate strings
-
+    public boolean equals(String obj){
+        boolean equals = false;
+        if (this.equals(obj)){
+            equals = true;
+        }
+        if (!equals && obj != null && getClass().equals(obj.getClass())){
+            equals = this.equals(obj);
+        }
+        return equals;
+    } // end method
 
     //Override the HashCode method as it is recommended when overriding
     //the equals method to ensure that duplicate elements have identical
