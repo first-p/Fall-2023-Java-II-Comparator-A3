@@ -56,8 +56,12 @@ public class Proj03Runner implements Comparator<String>{
         return name;
     }//end method
 
-    //Implement compare from the Comparator Interface to compare strings and store them in descending order
 
+    //Implement compare from the Comparator Interface to compare strings and store them in descending order
+    @Override
+    public int compare(String o1, String o2){
+        return -(o1.compareToIgnoreCase(o2));
+    } //end compare method
 
 }//end class Proj02Runner
 
