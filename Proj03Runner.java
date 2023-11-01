@@ -19,7 +19,9 @@ public class Proj03Runner implements Comparator<String>{
     }//end overloaded constructor
 
     //Overloaded constructor that takes only String values
-
+    public Proj03Runner(String name){
+        this.name = name;
+    } //end overloaded constructor
 
     //Getter method for the String Value
 
