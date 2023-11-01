@@ -24,8 +24,10 @@ public class Proj03Runner implements Comparator<String>{
     } //end overloaded constructor
 
     //Getter method for the String Value
+    public String getName(){
+        return name;
+    }//end getter method
 
-//
     //Override the equals method to provide consistent behavior when
     //there are duplicate strings
 
