@@ -51,7 +51,10 @@ public class Proj03Runner implements Comparator<String>{
     }//end method
 
     //Override the toString method in order to display a meaningful string representation
-
+    @Override
+    public String toString() {
+        return name;
+    }//end method
 
     //Implement compare from the Comparator Interface to compare strings and store them in descending order
 
